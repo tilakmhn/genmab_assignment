@@ -1,0 +1,25 @@
+[project]
+name = "genmab-customer-segmentation"
+version = "1.0.0"
+description = "Customer segmentation model for Genmab ML assessment"
+requires-python = ">=3.8,<3.12"
+
+dependencies = [
+    "pandas>=1.5.3",
+    "numpy>=1.24.3",
+    "scikit-learn>=1.3.0",
+    "boto3>=1.28.57",
+    "sagemaker==2.175.0",
+    "joblib>=1.3.1",
+    "pyyaml>=6.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

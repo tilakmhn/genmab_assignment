@@ -1,0 +1,12 @@
+[project]
+name = "genmab-customer-segmentation"
+version = "1.0.0"
+description = "Use AWS bedrock from lambda"
+requires-python = ">=3.8,<3.12"
+
+dependencies = [
+    "boto3>=1.28.57",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

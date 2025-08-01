@@ -1,0 +1,15 @@
+region: "us-east-1"
+role_arn: "arn:aws:iam::607274468492:role/clustering-model-sagemaker-execution-role-dev"
+lambda_role_arn: "arn:aws:iam::607274468492:role/clustering-model-lambda-exec-role-dev"
+bucket_name: "clustering-model-sagemaker-dev-348c16f8"
+project_name: "clustering-model"
+environment: "dev"
+
+# Instance types
+training_instance_type: "ml.t2.medium"
+inference_instance_type: "ml.t2.medium"
+
+# Model parameters (can be overridden)
+default_n_clusters: 3
+default_n_components: 1
+default_data_file: "customer_segmentation_data.csv"
