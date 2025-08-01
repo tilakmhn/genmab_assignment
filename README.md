@@ -53,3 +53,10 @@ aws lambda delete-function --function-name genmab-bedrock
 ## More Details
 Open the README inside each step’s folder for configuration options, cost notes,
 and troubleshooting tips.
+
+## Future Enhancements
+- Automate the process via CI/CD using GitHub actions
+- More in depth analysis of customer segmenation results from business objective perspective
+- Model Drift Detection & Retraining Pipeline
+- Feature Store Integration & Advanced Feature Engineering
+
